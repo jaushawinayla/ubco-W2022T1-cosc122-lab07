@@ -7,11 +7,12 @@
         <p>The computer will pick a number between 1 and 100 (inclusive).  Your job is to guess that number in as few guesses as possible.  If you take more than 6 guesses, the computer wins!</p>
         <h2>
             <script type="text/javascript">
-                // Your name and student number
+                // Jausha Winayla 64356613
 
 		        // Declare your variable to store the computer's random number here.
 		        // Declare your array here.
-
+                var array1 = new Array(6);
+                var guess;
 
 		        // This function will generate a random number between minVal and maxVal inclusive.
 		        // Assumption: minVal should be less than or equal to maxVal.
@@ -21,11 +22,21 @@
                 }
                 
                 // Create a random number.
+                var computerNumber = Math.floor(Math.random() * 100) + 1;
+                
 
 		        // Declare your loop variable here.
 		        // Write your loop that will allow up to six guesses.
+                var i;
                 
-                // for (; ;) 
+                for (i = 0; i < array1.length; i++) {
+                    guess = window.prompt("Guess a number");
+                    array1[i] = guess
+                    
+                }
+                
+                var j;
+                for (j = 0; j < array1.length; j++) 
                 {
                     // Your code goes here
 
@@ -35,11 +46,34 @@
                         document.write("You win by guessing correctly!  My number was: "+computerNumber);
                         break;				// This command will exit the loop when the player wins the game - LEAVE IT HERE!
                     }
+                    else if (guess > computerNumber) {
+                        window.alert("Too high");
+                    }
+                    else {
+                        window.alert("Too low");
+                    }
                 }
 
+                
+
 		        // Write out message here
+                if (j == 6)
+                    document.write("The computer wins! My number was ", computerNumber, "<br>");
+                else 
+                    document.write("You win by guessing correctly! My number was: ", guess, "<br>");
+
+                
+                
+            
 
 		        // Your code to print out list of guesses
+                document.write("Guess 1 was: ", array1[0] , "<br>");
+                
+                document.write("Guess 2 was: ", array1[1], "<br>");
+                document.write("Guess 3 was: ", array1[2], "<br>");
+                document.write("Guess 4 was: ", array1[3], "<br>");
+                document.write("Guess 5 was: ", array1[4], "<br>");
+                document.write("Guess 6 was: ", array1[5], "<br>");
 
             </script>
         </h2>
