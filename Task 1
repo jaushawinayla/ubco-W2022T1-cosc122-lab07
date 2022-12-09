@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Lab 07 - COSC 122 Index page for Task 1</title>
+    </head>
+    <body>
+        <h1>Task 1</h1>
+        <script type="text/javascript">
+         // name: Jausha Winayla, student number: 64355613
+        var number1 = window.prompt("Enter your first name:");
+        var number2 = window.prompt("Enter your last name:");
+            var result = number1 + " " + number2;
+            window.alert("Your full name is: "+result);
+
+        
+        var number3=window.prompt("Have you had your birthday this year (Y/N)?");
+
+        var number4=window.prompt("Enter the year of your birth")
+        
+        document.write("Your name is: " ,result ,"<br>");
+        document.write("You were born in: ",number4,"<br>"); 
+        
+            if (option=="Y")
+        document.write("You  had your birthday this year<br>"); 
+            else
+        document.write("You haven't had your birthday this year<br>"); 
+        
+        var number3=2022-number4;
+        document.write("Your age is:" , number3 + "<br>");
+        if (age%2==0)
+        document.write("Your age is an even number");
+        else
+        document.write("Your age is an odd number"); 
+        document.write("Result for" , number3 , "," , number4 ,", had birthday this year.<br>")
+        
+        </script>
+    </body>
+</html>
